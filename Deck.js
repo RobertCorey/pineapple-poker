@@ -2,8 +2,11 @@ let Card = require('./Card');
 
 module.exports = class Deck {
     constructor(){
-        this.cards = []
-
+        this.makePristine();
+        
+}
+    makePristine(){
+        this.cards = [];
         let suites = ["d","c","h","s"];
         for(let i = 0; i < 4 ; i++){
             for(let j=2 ; j<15 ; j++){
@@ -13,9 +16,5 @@ module.exports = class Deck {
                 
             }
         }
-
-        
     }
-
-
 }
