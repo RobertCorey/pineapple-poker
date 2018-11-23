@@ -1,6 +1,7 @@
 module.exports = {
     "env": {
-        "node": true
+        "node": true,
+        "mocha": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -8,6 +9,7 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "no-console": 0,
         "indent": [
             "error",
             2
