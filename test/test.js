@@ -21,11 +21,14 @@ describe('Deck', () => {
 
   describe('dealCard', () => {
     it('should remove card from deck', () => {
-      let card = deck.dealCard();
+      deck.dealCard();
       assert.equal(deck.cards.length, 51);
-    })
-    it('should have a card in its array', ()=> {
-      assert.equal(deck.cards[0].constructor.name, 'Card');
     });
-  })
+
+    it('should have a card in its array', ()=> {
+      let card = deck.dealCard();
+      assert.equal(card.constructor.name, 'Card');
+    });
+
+  });
 });

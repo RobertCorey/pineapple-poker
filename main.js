@@ -13,5 +13,5 @@ let foo = lodash.add(10,12);
 let deck1 = new Deck();
 
 for(let f = 0; f < 52 ; f++){
-    console.log(deck1.cards[f].print());
+  console.log(deck1.cards[f].print());
 }
