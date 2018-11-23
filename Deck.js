@@ -17,4 +17,7 @@ module.exports = class Deck {
             }
         }
     }
+    dealCard(){
+        return this.cards.pop();
+    }
 }
